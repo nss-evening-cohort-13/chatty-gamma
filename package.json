@@ -1,14 +1,14 @@
 {
-  "name": "webpack-intro",
+  "name": "chatty",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chatty Parks and Rec",
   "main": "src/javascripts/main.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production --module-bind js=babel-loader"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chris, Sam, Dana, Joseph",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.11.4",
