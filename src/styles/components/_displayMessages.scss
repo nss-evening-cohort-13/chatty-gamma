@@ -1,0 +1,35 @@
+#messageDisplay {
+  width: 50rem;
+  display: inline-block;
+}
+
+.message-text {
+  background-color: #F5D300;
+  padding: .8% 2% .8% 2%;
+  display: inline-block;
+  border-radius: 4rem;
+}
+
+.user-img-container {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+}
+
+.leslie {
+  background-image: url('https://i.insider.com/5824aa9046e27a1c008b5eec?width=998&format=jpeg');
+  background-size: cover;
+}
+
+.message-info-div {
+  width: 75%;
+}
+
+.message-info {
+  display: inline-block;
+}
+
+.delete-msg {
+  height: 1.3rem;
+}
