@@ -6,8 +6,18 @@
   <title>Parks and rec</title>
 </head>
 <body>
+  <nav class="navbar navbar-light bg-light justify-content-between" style="position:sticky; top:0">
+    <a class="navbar-brand"><img src="https://i.postimg.cc/rs2fqZqz/033df1653be855696d1c8eb7a01ec595.png" alt="Parks and Rec Image"></a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="text" placeholder="New Message" id="newMessage">
+      <button class="clear-messages btn btn-outline-danger my-2 my-sm-0" id="clearAllMessages" type="button">Clear All Messages</button>
+    </form>
+  </nav>
+
   <div id="app">
     <div id="messageDisplay"></div>
+    <div id="select-user" class="d-flex flex-column"></div>
   </div>
+
 </body>
 </html>
