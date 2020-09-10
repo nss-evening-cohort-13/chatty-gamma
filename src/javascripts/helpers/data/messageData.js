@@ -29,15 +29,14 @@ const messages = [
     time: 'Jan 1, 2020 1:35pm',
     text: 'Pills baby!'
   },
-]
+];
 
 const idGenerator = () => {
   const date = Date();
   const newID = date.valueOf();
-  
   return newID;
-}
+};
 
-const getMessages = () => {return messages};
+const getMessages = () => messages;
 
 export default { idGenerator, getMessages };
