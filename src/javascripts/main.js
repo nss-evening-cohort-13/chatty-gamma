@@ -1,8 +1,8 @@
 import '../styles/main.scss';
-import selectUser from './components/selectUser';
+import userRadio from './components/userRadio';
 
 const init = () => {
-  selectUser.buildUserSelector();
+  userRadio.buildUserRadio();
 };
 
 init();
