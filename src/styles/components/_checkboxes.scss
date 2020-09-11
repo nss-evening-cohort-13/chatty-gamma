@@ -14,3 +14,15 @@
     color: white;
     
 }
+.trash{ 
+    margin-left: 10px;
+    color:#7DBAE1;
+}
+.trash.dark{
+    color: white;
+}
+
+.trash:hover{
+    color: red;
+    cursor: grab;
+}

@@ -6,6 +6,7 @@ const darkMode = () => {
       $('nav').removeClass('navbar-light');
       $('nav').removeClass('bg-light');
       $('nav').toggleClass('dark');
+      $('.trash').toggleClass('dark');
     }
     if ($('#darkModeTarget').is(':not(:checked)')) {
       $('body').toggleClass('dark');
@@ -13,6 +14,7 @@ const darkMode = () => {
       $('nav').addClass('navbar-light');
       $('nav').addClass('bg-light');
       $('nav').toggleClass('dark');
+      $('.trash').toggleClass('dark');
     }
   });
 };
