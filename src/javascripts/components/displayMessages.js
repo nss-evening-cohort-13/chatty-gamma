@@ -5,7 +5,7 @@ import deleteMessage from './deleteMessage';
 const displayMessages = () => {
   const messages = messageData.getMessages();
   const users = userData.getUsers();
-  console.log(messages);
+
   messages.forEach((message) => {
     let profilePic = '';
 
