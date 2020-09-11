@@ -52,7 +52,7 @@ const getMessages = () => {
   }
   return messages;
 };
-const loadCart = () => {
+const loadStorage = () => {
   if (storage.getItem('storage')) {
     messages = storage.getItem('storage');
     return messages;
@@ -60,6 +60,6 @@ const loadCart = () => {
   return messages;
 };
 
-loadCart();
+loadStorage();
 
 export default { idGenerator, getMessages };
