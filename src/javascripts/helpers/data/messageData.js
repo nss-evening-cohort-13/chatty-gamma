@@ -1,4 +1,6 @@
-const messages = [
+import storage from './localStorage';
+
+let messages = [
   {
     id: 1599662682116,
     user: 'Leslie Knope',
@@ -41,12 +43,23 @@ const idGenerator = () => {
 const getMessages = () => {
   if (messages.length >= 21) {
     const newArray = messages.shift();
+    storage.setItem('storage', messages);
     return newArray;
   }
   if (messages.length < 21) {
+    storage.setItem('storage', messages);
     return messages;
   }
   return messages;
 };
+const loadCart = () => {
+  if (storage.getItem('storage')) {
+    messages = storage.getItem('storage');
+    return messages;
+  }
+  return messages;
+};
+
+loadCart();
 
 export default { idGenerator, getMessages };
