@@ -43,7 +43,7 @@ const getMessages = () => {
     const newArray = messages.shift();
     return newArray;
   }
-  if (messages.length < 7) {
+  if (messages.length < 21) {
     return messages;
   }
   return messages;

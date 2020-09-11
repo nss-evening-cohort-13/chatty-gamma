@@ -6,7 +6,7 @@ const displayMessages = () => {
   const messages = messageData.getMessages();
   const users = userData.getUsers();
 
-  messages.forEach((message) => {
+  messages.forEach((message, index) => {
     let profilePic = '';
 
     for (let i = 0; i < users.length; i += 1) {
@@ -26,7 +26,7 @@ const displayMessages = () => {
         </a>
       </div>
     </div>`);
-    deleteMessage.deleteMessage(message);
+    deleteMessage.deleteMessage(message, index);
   });
 };
 export default { displayMessages };
