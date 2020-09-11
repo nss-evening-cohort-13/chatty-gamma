@@ -6,6 +6,7 @@ const selectUser = () => {
       const userSelection = $(`input[name='${item.name}']:checked`).val();
       if (userSelection) {
         console.warn(userSelection);
+        // checked = true;
         //     item.checked = true;
         //   } else {
         //     item.checked = false;
