@@ -1,4 +1,4 @@
-import data from './helpers/data/messageData';
+import data from '../helpers/data/messageData';
 
 const displayMessages = () => {
   const messages = data.getMessages();

@@ -5,7 +5,7 @@ const buildUserRadio = () => {
     $('#select-user').append(`
     <div class="d-flex">
         <label>
-            <input type="radio" id="${item.id}-button" name="character" value="${item.id}">
+            <input type="radio" id="${item.id}-button" name="${item.name}" value="${item.id}">
             <img src="${item.img}"/><br>
             ${item.name}
         </label>
