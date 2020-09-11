@@ -12,7 +12,7 @@ const randomId = () => {
 
 const addMessage = () => {
   $('#newMessage').keypress((e) => {
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 && $('#newMessage').val() !== '') {
       const newId = randomId();
       const newMessage = {
         id: newId,
