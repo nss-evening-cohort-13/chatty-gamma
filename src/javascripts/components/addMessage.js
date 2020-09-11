@@ -22,7 +22,7 @@ const addMessage = () => {
       };
       data.getMessages().push(newMessage);
       $('#messageDisplay').html('');
-      display.displayMessages(data.getMessages());
+      display.displayMessages();
       emptyInput();
     }
   });
