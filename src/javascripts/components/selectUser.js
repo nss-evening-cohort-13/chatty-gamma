@@ -4,12 +4,14 @@ const selectUser = () => {
   $("input[type='radio']").click(() => {
     users.getUsers().forEach((item) => {
       const userSelection = $(`input[name='${item.name}']:checked`).val();
-      if (userSelection === item.name) {
+      if (userSelection) {
         console.warn(userSelection);
-      } else {
-          
+        //     item.checked = true;
+        //   } else {
+        //     item.checked = false;
+        //   }
+        // return userSelection
       }
-      // return userSelection
     });
   });
 };

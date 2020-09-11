@@ -35,7 +35,6 @@ const messages = [
 const idGenerator = () => {
   const date = Date();
   const newID = date.valueOf();
-
   return newID;
 };
 
