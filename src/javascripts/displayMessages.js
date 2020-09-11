@@ -5,21 +5,23 @@ const displayMessages = () => {
   const messages = data.getMessages();
   const users = userData.getUsers();
 
+  console.log(users);
+
   messages.forEach((message) => {
-    let profilePic = '';
+    // let profilePic = '';
 
-    for (let i = 0; users.length; i + 1) {
-      if (users[i].name === message.user) {
-        profilePic = users[i].img;
-      }
-    }
-
+    // for (let i = 0; users.length; i + 1) {
+    //   if (users[i].name === message.user) {
+    //     profilePic = users[i].img;
+    //   }
+    // }
+    // <img src="${profilePic}"
     $('#messageDisplay').append(`
     <div class="message">
       <p class="message-text">${message.text}</p>
       <div class="message-info-div">
         <div class="user-img-container">
-          <img src="${profilePic}"
+
         </div>
         <p class="message-info">${message.user} ${message.time}</p>
         <img src="images/trashcan.png" class="delete-msg" alt="trashcan graphic">
