@@ -8,7 +8,6 @@ const emptyInput = () => {
 const addMessage = () => {
   $('#newMessage').keypress((e) => {
     if (e.keyCode === 13) {
-      console.warn(e.keyCode);
       const newMessage = {
         id: data.idGenerator(),
         user: 'Ron Swanson',
