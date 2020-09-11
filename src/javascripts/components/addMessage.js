@@ -8,14 +8,14 @@ const emptyInput = () => {
 const addMessage = () => {
   $('#newMessage').keypress((e) => {
     if (e.keyCode === 13) {
+      const newId = data.idGenerator();
       const newMessage = {
-        id: data.idGenerator(),
+        id: newId,
         user: 'Ron Swanson',
         time: 'Jan 1, 2020 1:32pm',
         text: $('#newMessage').val(),
       };
       data.getMessages().push(newMessage);
-      console.warn(data.getMessages());
       $('#messageDisplay').html('');
       display.displayMessages(data.getMessages());
       emptyInput();

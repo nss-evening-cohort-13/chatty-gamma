@@ -40,4 +40,4 @@ const idGenerator = () => {
 
 const getMessages = () => messages;
 
-export default { idGenerator, getMessages, messages };
+export default { idGenerator, getMessages };
