@@ -38,6 +38,15 @@ const idGenerator = () => {
   return newID;
 };
 
-const getMessages = () => messages;
+const getMessages = () => {
+  if (messages.length >= 21) {
+    const newArray = messages.shift();
+    return newArray;
+  }
+  if (messages.length < 7) {
+    return messages;
+  }
+  return messages;
+};
 
 export default { idGenerator, getMessages };
