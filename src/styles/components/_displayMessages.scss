@@ -1,10 +1,12 @@
 #messageDisplay {
   width: 50rem;
-  display: inline-block;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .message-text {
-  background-color: #F5D300;
+  background-color: $parks-rec-yellow;
   padding: .8% 2% .8% 2%;
   display: inline-block;
   border-radius: 4rem;

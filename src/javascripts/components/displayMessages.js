@@ -6,7 +6,7 @@ const displayMessages = () => {
   const messages = messageData.getMessages();
   const users = userData.getUsers();
 
-  messages.forEach((message) => {
+  messages.forEach((message, index) => {
     let profilePic = '';
 
     for (let i = 0; i < users.length; i += 1) {
@@ -21,12 +21,12 @@ const displayMessages = () => {
       <div class="message-info-div">
         <img src=${profilePic} class="profile-pic" alt="user's profile pic">
         <p class="message-info">${message.user} ${message.time}</p>
-        <a id="delete-${message.id}">
-        <img src="images/trashcan.png" class="delete-msg"  alt="trashcan graphic">
+        <a class="trash" id="delete-${message.id}">
+        <i class="fas fa-trash-alt"></i>
         </a>
       </div>
     </div>`);
-    deleteMessage.deleteMessage(message);
+    deleteMessage.deleteMessage(message, index);
   });
 };
 export default { displayMessages };
