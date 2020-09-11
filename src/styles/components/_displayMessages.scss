@@ -1,6 +1,8 @@
 #messageDisplay {
   width: 50rem;
-  display: inline-block;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .message-text {

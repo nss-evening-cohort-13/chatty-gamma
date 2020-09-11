@@ -1,9 +1,16 @@
 
 .checkbox{
     margin: 0 6px 6px 0;
+    color: #7DBAE1;
 }
 .checkboxDiv{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 5px 0 20px 0;
+    
+}
+.smallCheckbox.dark {
+    background-color: #7DBAE1;
+    color: white;
+    
 }
