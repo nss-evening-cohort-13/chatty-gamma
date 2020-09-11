@@ -13,7 +13,7 @@ const messages = [
   },
   {
     id: 1599663503257,
-    user: 'Garry (aka Jerry, Larry, Terry, and Barry) Gergich',
+    user: 'Garry Gergich',
     time: 'Jan 1, 2020 1:33pm',
     text:
       'I told them my real name was Garry, and they said "who cares?" What a fun bunch of guys.',
@@ -26,7 +26,7 @@ const messages = [
   },
   {
     id: 1599663524542,
-    user: 'Jean-Ralphio',
+    user: 'Jean Ralphio',
     time: 'Jan 1, 2020 1:35pm',
     text: 'Pills baby!',
   },
