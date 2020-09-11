@@ -1,9 +1,9 @@
-import data from './helpers/data/messageData';
-import userData from './helpers/data/userData';
+import messageData from '../helpers/data/messageData';
+import userData from '../helpers/data/userData';
 import deleteMessage from './deleteMessage';
 
 const displayMessages = () => {
-  const messages = data.getMessages();
+  const messages = messageData.getMessages();
   const users = userData.getUsers();
 
   messages.forEach((message) => {
@@ -22,7 +22,7 @@ const displayMessages = () => {
         <img src=${profilePic} class="profile-pic" alt="user's profile pic">
         <p class="message-info">${message.user} ${message.time}</p>
         <a id="delete-${message.id}">
-        <img src="src/images/trashcan.png" class="delete-msg"  alt="trashcan graphic">
+        <img src="images/trashcan.png" class="delete-msg"  alt="trashcan graphic">
         </a>
       </div>
     </div>`);
