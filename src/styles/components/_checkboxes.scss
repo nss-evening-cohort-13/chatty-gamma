@@ -1,7 +1,6 @@
 
 .checkbox{
     margin: 0 6px 6px 0;
-    color: #7DBAE1;
 }
 .checkboxDiv{
     display: flex;
@@ -9,14 +8,19 @@
     margin: 5px 0 20px 0;
     
 }
+.smallCheckbox{
+    margin-right: 8px;
+}
 .smallCheckbox.dark {
-    background-color: #7DBAE1;
+    margin-right: 8px;
+    background-color: $message-display-bg;
     color: white;
+    border: 2px $parks-rec-yellow solid;
     
 }
 .trash{ 
     margin-left: 10px;
-    color:#7DBAE1;
+    color:$message-display-bg;
 }
 .trash.dark{
     color: white;
