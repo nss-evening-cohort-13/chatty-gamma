@@ -4,8 +4,18 @@
 @import './components/';
 
 
+@import './globals/';
+
+@import './components';
+
+
 body {
   background-color: white;
   color: black;
+  text-align: center;
+}
+body.dark{
+  background-color: rgb(78, 75, 75);
+  color: rgb(255, 253, 253);
   text-align: center;
 }
