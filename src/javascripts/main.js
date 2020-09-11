@@ -1,7 +1,7 @@
 import '../styles/main.scss';
 import dark from './components/darkMode';
 import userRadio from './components/userRadio';
-import displayMessages from './displayMessages';
+import displayMessages from './components/displayMessages';
 
 const init = () => {
   userRadio.buildUserRadio();
