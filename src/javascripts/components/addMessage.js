@@ -5,10 +5,15 @@ const emptyInput = () => {
   $('#newMessage').val('');
 };
 
+const randomId = () => {
+  const random = [Math.floor(Math.random() * 1000)];
+  return random;
+};
+
 const addMessage = () => {
   $('#newMessage').keypress((e) => {
     if (e.keyCode === 13) {
-      const newId = data.idGenerator();
+      const newId = randomId();
       const newMessage = {
         id: newId,
         user: 'Ron Swanson',
