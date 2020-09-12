@@ -42,9 +42,9 @@ const idGenerator = () => {
 
 const getMessages = () => {
   if (messages.length >= 21) {
-    const newArray = messages.shift();
+    messages.shift();
     storage.setItem('storage', messages);
-    return newArray;
+    return messages;
   }
   if (messages.length < 21) {
     storage.setItem('storage', messages);
