@@ -30,4 +30,4 @@ const addMessage = () => {
   });
 };
 
-export default { addMessage, emptyInput, randomId };
+export default { addMessage, emptyInput };
