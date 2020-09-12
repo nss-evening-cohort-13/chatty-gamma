@@ -1,14 +1,6 @@
 import data from '../helpers/data/messageData';
 import storage from '../helpers/data/localStorage';
 
-const disableButton = () => {
-  if (data.getMessages().length === 0) {
-    $('.clear-messages')[0].setAttribute('disabled', true);
-  } else if (data.getMessages().length > 0) {
-    $('.clear-messages')[0].removeAttribute('disabled');
-  }
-};
-
 const onClear = () => {
   $('#messageDisplay').html(`
     <div class="clear-message-display">
@@ -24,7 +16,6 @@ const clearMessage = () => {
     data.getMessages().length = 0;
     storage.clearItems();
     onClear();
-    disableButton();
   });
 };
 
