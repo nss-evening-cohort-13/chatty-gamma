@@ -9,15 +9,10 @@ const emptyInput = () => {
   $('#newMessage').val('');
 };
 
-const randomId = () => {
-  const random = [Math.floor(Math.random() * 1000)];
-  return random;
-};
-
 const addMessage = () => {
   $('#newMessage').keypress((e) => {
     if (e.keyCode === 13) {
-      const newId = randomId();
+      const newId = data.randomId();
       const message = $('#newMessage').val();
       const emojitext = emoji.emojis(message);
       const newMessage = {
@@ -35,4 +30,4 @@ const addMessage = () => {
   });
 };
 
-export default { addMessage, randomId };
+export default { addMessage };

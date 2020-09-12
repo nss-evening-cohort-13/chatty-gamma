@@ -12,6 +12,8 @@ const displayMessages = () => {
     for (let i = 0; i < users.length; i += 1) {
       if (users[i].name === message.user) {
         profilePic = users[i].img;
+      } else if (message.user.toLowerCase().includes('bot')) {
+        profilePic = '../../../images/chatbot.png';
       }
     }
 
