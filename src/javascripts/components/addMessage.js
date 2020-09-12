@@ -3,6 +3,7 @@ import data from '../helpers/data/messageData';
 import display from './displayMessages';
 import emoji from './emojis';
 import selectUser from './selectUser';
+import chatbots from './chatbots';
 
 const emptyInput = () => {
   $('#newMessage').val('');
@@ -29,8 +30,9 @@ const addMessage = () => {
       $('#messageDisplay').html('');
       display.displayMessages();
       emptyInput();
+      chatbots.runChatbots();
     }
   });
 };
 
-export default { addMessage };
+export default { addMessage, randomId };
