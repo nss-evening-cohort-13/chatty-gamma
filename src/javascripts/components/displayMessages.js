@@ -19,7 +19,10 @@ const displayMessages = () => {
 
     $('#messageDisplay').append(`
     <div class="message" id="message-${message.id}">
+    <div class="message-text">
+    <img class="gif message-text" onerror="this.style.display='none'" src=${message.gif !== undefined ? message.gif : ''}' alt='${message.id}'>
       <p class="message-text">${message.text}</p>
+      </div>
       <div class="message-info-div">
         <img src=${profilePic} class="profile-pic" alt="user's profile pic">
         <p class="message-info">${message.user} ${message.time}</p>
