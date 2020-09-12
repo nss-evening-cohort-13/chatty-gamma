@@ -4,6 +4,7 @@ import userRadio from './components/userRadio';
 import displayMessages from './components/displayMessages';
 import selectUser from './components/selectUser';
 import add from './components/addMessage';
+import clear from './components/clearMessage';
 
 const init = () => {
   userRadio.buildUserRadio();
@@ -11,6 +12,7 @@ const init = () => {
   selectUser.userSelectionClick();
   dark.darkMode();
   add.addMessage();
+  clear.clearMessage();
 };
 
 init();
