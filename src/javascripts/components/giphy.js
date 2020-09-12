@@ -32,7 +32,7 @@ const giphyButton = () => {
         datas.getMessages().push(newMessage);
         $('#messageDisplay').html('');
         display.displayMessages();
-        $('#giphy').html('');
+        $('#giphy').val('');
       })
       .catch((err) => {
         console.error(err);
