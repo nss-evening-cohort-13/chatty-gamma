@@ -20,7 +20,7 @@ const giphyButton = () => {
         img.src = content.data[0].images.downsized.url;
         img.alt = content.data[0].title;
         fig.appendChild(img);
-        const newId = random.randomId();
+        const newId = datas.randomId();
         const newMessage = {
           id: newId,
           user: selectUser.selectUser(),
