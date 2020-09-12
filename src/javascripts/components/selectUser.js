@@ -1,20 +1,16 @@
 import users from '../helpers/data/userData';
 
 const selectUser = () => {
-  $("input[type='radio']").click(() => {
-    users.getUsers().forEach((item) => {
-      const userSelection = $(`input[name='${item.name}']:checked`).val();
-      if (userSelection) {
-        console.warn(userSelection);
-        // checked = true;
-        //     item.checked = true;
-        //   } else {
-        //     item.checked = false;
-        //   }
-        // return userSelection
-      }
-    });
+  users.getUsers().forEach((item) => {
+    const userSelection = $('input[name="character"]:checked').val();
+    if (userSelection === item.id) {
+      return userSelection;
+    }
   });
 };
 
-export default { selectUser };
+const userSelectionClick = () => {
+  $('#select-user').on('click', selectUser);
+};
+
+export default { userSelectionClick };

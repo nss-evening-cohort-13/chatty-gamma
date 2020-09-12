@@ -8,7 +8,7 @@ import add from './components/addMessage';
 const init = () => {
   userRadio.buildUserRadio();
   displayMessages.displayMessages();
-  selectUser.selectUser();
+  selectUser.userSelectionClick();
   dark.darkMode();
   add.addMessage();
 };
