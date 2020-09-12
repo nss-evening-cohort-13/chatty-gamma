@@ -10,6 +10,7 @@ const init = () => {
   userRadio.buildUserRadio();
   displayMessages.displayMessages();
   selectUser.userSelectionClick();
+  selectUser.standardUser();
   dark.darkMode();
   add.addMessage();
   clear.clearMessage();
