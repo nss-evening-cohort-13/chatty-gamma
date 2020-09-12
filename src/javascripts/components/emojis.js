@@ -6,7 +6,7 @@ const emojis = (message) => {
   let newMessage = '';
   switch (message) {
     case ':heart:':
-      newMessage = '&#x2764';
+      newMessage = `${$('#newMessage').val()} &#x2764`;
       break;
     case ':lol:':
       newMessage = '&#x1F602';
@@ -20,8 +20,8 @@ const emojis = (message) => {
     case ':smile:':
       newMessage = '&#x1F60A';
       break;
-    case ':lol:':
-      newMessage = '&#x1F602';
+    case ':fire:':
+      newMessage = '&#x1F525';
       break;
     default:
       newMessage = $('#newMessage').val();
