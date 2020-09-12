@@ -1,16 +1,12 @@
-import users from '../helpers/data/userData';
-
 const selectUser = () => {
-  users.getUsers().forEach((item) => {
-    const userSelection = $('input[name="character"]:checked').val();
-    if (userSelection === item.id) {
-      return userSelection;
-    }
-  });
+  const user = $('input[name="character"]:checked').val()
+    ? $('input[name="character"]:checked').val()
+    : 'Leslie';
+  return user;
 };
 
 const userSelectionClick = () => {
-  $('#select-user').on('click', selectUser);
+  $('#select-user').on('change', selectUser);
 };
 
-export default { userSelectionClick };
+export default { userSelectionClick, selectUser };
