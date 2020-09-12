@@ -1,11 +1,11 @@
 const standardUser = () => {
-  $('#user6-button').prop('checked', true);
+  $('#user8-button').prop('checked', true);
 };
 
 const selectUser = () => {
   const user = $('input[name="character"]:checked').val()
     ? $('input[name="character"]:checked').val()
-    : $('input[id="user6"]'.val());
+    : $('input[id="user8"]'.val());
   return user;
 };
 
