@@ -9,7 +9,7 @@ const APIKEY = 'bIDzmVyydApjmjrw62c1gG8rufmN1yMA';
 const fetch = require('node-fetch');
 
 const giphyButton = () => {
-  $('#addGif').on('click', () => {
+  $('#addGif').on('click', (e) => {
     let url = `https:api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=`;
     const str = $('#giphy').val().trim();
     url = url.concat(str);
@@ -28,11 +28,12 @@ const giphyButton = () => {
           user: selectUser.selectUser(),
           time: moment().format('MMMM Do YYYY, h:mm a'),
           text: emoji.emojis(),
-          gif: img.src
+          gif: img.src,
         };
         datas.getMessages().push(newMessage);
-        $('#giphy').html('');
+        $('#messageDisplay').html('');
         display.displayMessages();
+        $('#giphy').html('');
       })
       .catch((err) => {
         console.error(err);
