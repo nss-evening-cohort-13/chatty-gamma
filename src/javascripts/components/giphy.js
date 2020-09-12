@@ -1,5 +1,4 @@
 import moment from 'moment';
-import random from './addMessage';
 import datas from '../helpers/data/messageData';
 import display from './displayMessages';
 import selectUser from './selectUser';
@@ -21,7 +20,7 @@ const giphyButton = () => {
         img.src = content.data[0].images.downsized.url;
         img.alt = content.data[0].title;
         fig.appendChild(img);
-        const newId = random.randomId();
+        const newId = datas.randomId();
         const newMessage = {
           id: newId,
           user: selectUser.selectUser(),
