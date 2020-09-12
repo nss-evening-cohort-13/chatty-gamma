@@ -4,6 +4,29 @@
 }
 .checkboxDiv{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 5px 0 20px 0;
+    
+}
+.smallCheckbox{
+    margin-right: 8px;
+}
+.smallCheckbox.dark {
+    margin-right: 8px;
+    background-color: $message-display-bg;
+    color: white;
+    border: 2px $parks-rec-yellow solid;
+    
+}
+.trash{ 
+    margin-left: 10px;
+    color:$message-display-bg;
+}
+.trash.dark{
+    color: white;
+}
+
+.trash:hover{
+    color: red;
+    cursor: grab;
 }
