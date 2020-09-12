@@ -6,6 +6,7 @@ import selectUser from './components/selectUser';
 import add from './components/addMessage';
 import largeText from './components/largeText';
 import clear from './components/clearMessage';
+import gif from './components/giphy';
 
 const init = () => {
   userRadio.buildUserRadio();
@@ -16,6 +17,7 @@ const init = () => {
   add.addMessage();
   largeText.toggleTextSize();
   clear.clearMessage();
+  gif.giphyButton();
 };
 
 init();
