@@ -5,7 +5,7 @@
 .checkboxDiv{
     display: flex;
     justify-content: flex-end;
-    margin: 5px 0 20px 0;
+    margin: 5px 5% 20px 0;
     
 }
 .smallCheckbox{
@@ -20,6 +20,7 @@
 }
 .trash{ 
     margin-left: 10px;
+    margin-bottom: 14px;
     color:$message-display-bg;
 }
 .trash.dark{
