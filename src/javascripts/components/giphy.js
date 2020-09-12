@@ -9,11 +9,10 @@ const APIKEY = 'bIDzmVyydApjmjrw62c1gG8rufmN1yMA';
 const fetch = require('node-fetch');
 
 const giphyButton = () => {
-  $('#addGif').on('click', (e) => {
+  $('#addGif').on('click', () => {
     let url = `https:api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=`;
     const str = $('#giphy').val().trim();
     url = url.concat(str);
-    console.log(url);
     fetch(url)
       .then((data) => data.json())
       .then((content) => {
