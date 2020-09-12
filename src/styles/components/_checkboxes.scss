@@ -1,4 +1,6 @@
-
+.clear-messages {
+    margin: 25%;
+}
 .checkbox{
     margin: 0 6px 6px 0;
 }
@@ -21,12 +23,8 @@
 .trash{ 
     margin-left: 10px;
     margin-bottom: 14px;
-    color:$message-display-bg;
+    color: black;
 }
-.trash.dark{
-    color: white;
-}
-
 .trash:hover{
     color: red;
     cursor: grab;
