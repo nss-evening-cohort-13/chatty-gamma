@@ -21,10 +21,15 @@ nav{
 }
 .navbar {
     background-color: $light-grey;
+    background-image: url('https://cdn.shopify.com/s/files/1/0250/1217/4900/collections/parks-banner_1_1400x.jpg?v=1569426387');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #newMessage {
+    font-weight: bold;
     margin-bottom: 5px;
     width: 100%;
+    opacity: 0.6;
 }
 .form-inline{
   width: 100%;
