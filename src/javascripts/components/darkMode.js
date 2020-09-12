@@ -11,8 +11,6 @@ const darkMode = () => {
     if ($('#darkModeTarget').is(':not(:checked)')) {
       $('body').toggleClass('dark');
       $('.smallCheckbox').toggleClass('dark');
-      $('nav').addClass('navbar-light');
-      $('nav').addClass('bg-light');
       $('nav').toggleClass('dark');
       $('.trash').toggleClass('dark');
     }
