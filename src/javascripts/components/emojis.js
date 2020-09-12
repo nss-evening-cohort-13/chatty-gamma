@@ -11,14 +11,14 @@ const emojis = (message) => {
     case ':lol:':
       newMessage = '&#x1F602';
       break;
-    case ':lol:':
-      newMessage = '&#x1F602';
+    case ':cry:':
+      newMessage = '&#x1F622';
       break;
-    case ':lol:':
-      newMessage = '&#x1F602';
+    case ':sparkles:':
+      newMessage = '&#x2728';
       break;
-    case ':lol:':
-      newMessage = '&#x1F602';
+    case ':smile:':
+      newMessage = '&#x1F60A';
       break;
     case ':lol:':
       newMessage = '&#x1F602';
