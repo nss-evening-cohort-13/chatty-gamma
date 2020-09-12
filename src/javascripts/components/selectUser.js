@@ -1,7 +1,7 @@
 const selectUser = () => {
   const user = $('input[name="character"]:checked').val()
     ? $('input[name="character"]:checked').val()
-    : 'Leslie';
+    : $('input[id="user6"]'.val());
   return user;
 };
 
