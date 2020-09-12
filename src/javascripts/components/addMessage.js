@@ -30,7 +30,7 @@ const addMessage = () => {
       $('#messageDisplay').html('');
       display.displayMessages();
       emptyInput();
-      chatbots.runChatbots();
+      chatbots.runChatbots(message);
     }
   });
 };

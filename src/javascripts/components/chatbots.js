@@ -16,11 +16,13 @@ const randomId = () => {
   return random;
 };
 
-const runChatbots = () => {
-  const newMessage = $('#newMessage').val().toLowerCase();
+const runChatbots = (userMessage) => {
+  const newMessage = userMessage.toLowerCase();
 
   chatbots.forEach((chatbot) => {
     for (let i = 0; i < chatbot.keywords.length; i += 1) {
+      console.log(newMessage.includes(chatbot.keywords[i]));
+
       if (newMessage.includes(chatbot.keywords[i])) {
         const newId = randomId();
         const botMessage = {
