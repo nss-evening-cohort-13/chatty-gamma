@@ -1,3 +1,4 @@
+import moment from 'moment';
 import data from '../helpers/data/messageData';
 import display from './displayMessages';
 import emoji from './emojis';
@@ -21,7 +22,7 @@ const addMessage = () => {
       const newMessage = {
         id: newId,
         user: selectUser.selectUser(),
-        time: 'Jan 1, 2020 1:32pm',
+        time: moment().format('MMMM Do YYYY, h:mm a'),
         text: emojitext,
       };
       data.getMessages().push(newMessage);
