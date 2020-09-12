@@ -1,5 +1,6 @@
 import data from '../helpers/data/messageData';
 import display from './displayMessages';
+import selectUser from './selectUser';
 
 const emptyInput = () => {
   $('#newMessage').val('');
@@ -16,7 +17,7 @@ const addMessage = () => {
       const newId = randomId();
       const newMessage = {
         id: newId,
-        user: 'Ron Swanson',
+        user: selectUser.selectUser(),
         time: 'Jan 1, 2020 1:32pm',
         text: $('#newMessage').val(),
       };
