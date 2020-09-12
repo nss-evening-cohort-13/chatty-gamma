@@ -1,6 +1,7 @@
 import data from '../helpers/data/messageData';
 import display from './displayMessages';
 import emoji from './emojis';
+import selectUser from './selectUser';
 
 const emptyInput = () => {
   $('#newMessage').val('');
@@ -19,7 +20,7 @@ const addMessage = () => {
       const emojitext = emoji.emojis(message);
       const newMessage = {
         id: newId,
-        user: 'Ron Swanson',
+        user: selectUser.selectUser(),
         time: 'Jan 1, 2020 1:32pm',
         text: emojitext,
       };

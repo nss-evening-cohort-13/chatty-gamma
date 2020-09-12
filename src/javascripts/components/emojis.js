@@ -1,12 +1,8 @@
 const emojis = (message) => {
-  //   if (message === ':heart:') {
-  //     return '&#x2764';
-  //   }
-  //   return message;
   let newMessage = '';
   switch (message) {
     case ':heart:':
-      newMessage = `${$('#newMessage').val()} &#x2764`;
+      newMessage = '&#x2764';
       break;
     case ':lol:':
       newMessage = '&#x1F602';
@@ -22,6 +18,15 @@ const emojis = (message) => {
       break;
     case ':fire:':
       newMessage = '&#x1F525';
+      break;
+    case ':thumbsup:':
+      newMessage = '&#x1F44D';
+      break;
+    case ':lilsebastien:':
+      newMessage = '&#x1F434';
+      break;
+    case ':raccoon:':
+      newMessage = '&#x1F99D';
       break;
     default:
       newMessage = $('#newMessage').val();
