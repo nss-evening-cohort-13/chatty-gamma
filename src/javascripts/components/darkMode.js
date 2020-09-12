@@ -7,12 +7,14 @@ const darkMode = () => {
       $('nav').removeClass('bg-light');
       $('nav').toggleClass('dark');
       $('.trash').toggleClass('dark');
+      $('.clear-messages').toggleClass('dark');
     }
     if ($('#darkModeTarget').is(':not(:checked)')) {
       $('body').toggleClass('dark');
       $('.smallCheckbox').toggleClass('dark');
       $('nav').toggleClass('dark');
       $('.trash').toggleClass('dark');
+      $('.clear-messages').toggleClass('dark');
     }
   });
 };
