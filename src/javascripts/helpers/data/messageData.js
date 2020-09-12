@@ -1,4 +1,6 @@
-const messages = [
+import storage from './localStorage';
+
+let messages = [
   {
     id: 1599662682116,
     user: 'Leslie Knope',
@@ -38,6 +40,26 @@ const idGenerator = () => {
   return newID;
 };
 
-const getMessages = () => messages;
+const getMessages = () => {
+  if (messages.length >= 21) {
+    const newArray = messages.shift();
+    storage.setItem('storage', messages);
+    return newArray;
+  }
+  if (messages.length < 21) {
+    storage.setItem('storage', messages);
+    return messages;
+  }
+  return messages;
+};
+const loadStorage = () => {
+  if (storage.getItem('storage')) {
+    messages = storage.getItem('storage');
+    return messages;
+  }
+  return messages;
+};
+
+loadStorage();
 
 export default { idGenerator, getMessages };
