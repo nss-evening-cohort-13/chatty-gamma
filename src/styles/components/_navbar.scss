@@ -13,7 +13,7 @@ nav.dark{
 }
 nav{
    padding: 10px;
-   height: 75px;
+   height: 100%;
    img{
     padding: 5px;
     border-radius: 8px;
@@ -23,5 +23,11 @@ nav{
     background-color: $light-grey;
 }
 #newMessage {
-    width: 900px;
+    width: 100%;
+}
+.form-inline{
+  width: 100%;
+}
+#clearAllMessages{
+    margin-left: auto;
 }
