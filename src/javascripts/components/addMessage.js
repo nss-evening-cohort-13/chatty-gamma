@@ -8,10 +8,6 @@ const emptyInput = () => {
   $('#newMessage').val('');
 };
 
-const randomId = () => {
-  const random = [Math.floor(Math.random() * 1000)];
-  return random;
-};
 
 const addMessage = () => {
   $('#newMessage').keypress((e) => {
