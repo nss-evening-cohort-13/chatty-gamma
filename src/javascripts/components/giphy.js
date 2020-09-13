@@ -15,18 +15,14 @@ const giphyButton = () => {
     fetch(url)
       .then((data) => data.json())
       .then((content) => {
-        const fig = document.createElement('div');
-        const img = document.createElement('img');
-        img.src = content.data[0].images.downsized.url;
-        img.alt = content.data[0].title;
-        fig.appendChild(img);
+        const gifLink = content.data[0].images.downsized.url;
         const newId = datas.randomId();
         const newMessage = {
           id: newId,
           user: selectUser.selectUser(),
           time: moment().format('MMMM Do YYYY, h:mm a'),
           text: emoji.emojis(),
-          gif: img.src,
+          gif: gifLink
         };
         datas.getMessages().push(newMessage);
         $('#messageDisplay').html('');
