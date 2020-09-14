@@ -1,34 +1,31 @@
-nav.dark{
-    background-color: #7DBAE1;
-    img{
-        background-color: rgb(243, 241, 241);
-        padding: 5px;
-        border-radius: 8px;
-        border: 2px $parks-rec-yellow solid;
-    }
-    button{
-        background-color:white;
-    }
-    
-}
-nav{
-   padding: 10px;
-   height: 100%;
-   img{
+nav {
+  padding: 10px;
+  height: 100%;
+  img {
     padding: 5px;
     border-radius: 8px;
-   }
+  }
 }
 .navbar {
-    background-color: $light-grey;
+  background-color: $light-grey;
+  background-image: url('https://cdn.shopify.com/s/files/1/0250/1217/4900/collections/parks-banner_1_1400x.jpg?v=1569426387');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+#giphy {
+  margin: 5px;
+  font-weight: bold;
+  opacity: 0.8;
 }
 #newMessage {
-    margin-bottom: 5px;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 5px;
+  font-weight: bold;
+  width: 90%;
+  opacity: 0.8;
 }
-.form-inline{
+.form-inline {
   width: 100%;
-}
-#clearAllMessages{
-    margin-left: 45%;
 }

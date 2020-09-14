@@ -1,33 +1,52 @@
-
-.checkbox{
-    margin: 0 6px 6px 0;
+.clear-messages {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #e12423;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 25%;
 }
-.checkboxDiv{
-    display: flex;
-    justify-content: flex-end;
-    margin: 5px 5% 20px 0;
-    
+.clear-messages.dark{
+    color: white;
 }
-.smallCheckbox{
-    margin-right: 8px;
+.clear-messages:hover {
+  background-color: #c91b1b;
+}
+.clear-messages:active {
+    background-color: #e12423;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.checkbox {
+  margin: 0 6px 6px 0;
+}
+.checkboxDiv {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 5% 20px 0;
+}
+.smallCheckbox {
+  margin-right: 8px;
 }
 .smallCheckbox.dark {
-    margin-right: 8px;
-    background-color: $message-display-bg;
-    color: white;
-    border: 2px $parks-rec-yellow solid;
-    
+  margin-right: 8px;
+  background-color: $message-display-bg;
+  color: white;
+  border: 2px $parks-rec-yellow solid;
 }
-.trash{ 
-    margin-left: 10px;
-    margin-bottom: 14px;
-    color:$message-display-bg;
+.trash {
+  margin-left: 10px;
+  margin-bottom: 14px;
+  color: black;
 }
-.trash.dark{
-    color: white;
-}
-
-.trash:hover{
-    color: red;
-    cursor: grab;
+.trash:hover {
+  color: red;
+  cursor: grab;
 }
