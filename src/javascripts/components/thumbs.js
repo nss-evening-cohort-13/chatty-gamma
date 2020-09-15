@@ -1,16 +1,16 @@
 const thumbsUp = (message) => {
   const newMessage = message;
-  $(`#${message.thumbsUp}`).on('click', () => {
+  $(`#up-${message.id}`).on('click', () => {
     newMessage.thumbsUp += 1;
-    $('#up').html(newMessage.thumbsUp);
+    $(`#thumbsUp-${message.id}`).html(newMessage.thumbsUp);
   });
 };
 
 const thumbsDown = (message) => {
   const newMessage = message;
-  $(`#${message.thumbsDown}`).on('click', () => {
+  $(`#down-${message.id}`).on('click', () => {
     newMessage.thumbsDown += 1;
-    $('#down').html(newMessage.thumbsDown);
+    $(`#thumbsDown-${message.id}`).html(newMessage.thumbsDown);
   });
 };
 

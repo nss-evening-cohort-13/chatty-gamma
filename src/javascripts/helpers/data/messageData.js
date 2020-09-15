@@ -6,8 +6,8 @@ let messages = [
     user: 'Leslie Knope',
     time: 'September 15th, 2020 1:30pm',
     text: 'I love Pawnee!',
-    thumbsUp: 2,
-    thumbsDown: 1,
+    thumbsUp: 0,
+    thumbsDown: 0,
   },
   {
     id: 67,

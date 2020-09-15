@@ -30,19 +30,19 @@ const displayMessages = () => {
         <a class="trash" id="delete-${message.id}">
         <i class="fas fa-trash-alt"></i>
         </a>
-        <button id="${message.thumbsUp}">
+        <button id="up-${message.id}">
           <i class="fas fa-thumbs-up"></i>
-          <p id="up">${message.thumbsUp}</p>
+          <p id="thumbsUp-${message.id}">${message.thumbsUp}</p>
         </button>
-        <button id="${message.thumbsDown}">
+        <button id="down-${message.id}">
           <i class="fas fa-thumbs-down"></i>
-          <p id="down">${message.thumbsDown}</p>
+          <p id="thumbsDown-${message.id}">${message.thumbsDown}</p>
         </button>
       </div>
     </div>`);
     deleteMessage.deleteMessage(message, index);
-    thumbs.thumbsUp(message);
-    thumbs.thumbsDown(message);
+    thumbs.thumbsUp(message, index);
+    thumbs.thumbsDown(message, index);
   });
 };
 export default { displayMessages };
