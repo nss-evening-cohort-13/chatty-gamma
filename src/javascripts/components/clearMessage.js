@@ -10,35 +10,14 @@ const onClear = () => {
   `);
 };
 
-const resetAttr = () => {
-  $('#clearAllMessages').removeAttr('disabled');
-};
-
 const clearMessage = () => {
   $('#clearAllMessages').on('click', () => {
-    if (data.getMessages().length === 0) {
-      $('#clearAllMessages').attr('disabled', true);
-    } else if (data.getMessages().length > 0) {
-      $('#messageDisplay').empty();
-      data.getMessages().length = 0;
-      storage.clearItems();
-      onClear();
-    }
+    $('#messageDisplay').empty();
+    data.getMessages().length = 0;
+    storage.clearItems();
+    onClear();
+    $('#clearAllMessages').attr('disabled', true);
   });
 };
 
-// const clearMessage = () => {
-//   if (data.getMessages().length === 0) {
-//     $('#clearAllMessages').attr('disabled', true);
-//   } else {
-//     $('#clearAllMessages').on('click', () => {
-//       $('#clearAllMessages').removeAttr('disabled');
-//       $('#messageDisplay').empty();
-//       data.getMessages().length = 0;
-//       storage.clearItems();
-//       onClear();
-//     });
-//   }
-// };
-
-export default { clearMessage, resetAttr };
+export default { clearMessage };

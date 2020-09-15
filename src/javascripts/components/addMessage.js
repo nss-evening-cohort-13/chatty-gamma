@@ -4,7 +4,6 @@ import display from './displayMessages';
 import emoji from './emojis';
 import selectUser from './selectUser';
 import chatbots from './chatbots';
-import reset from './clearMessage';
 
 const emptyInput = () => {
   $('#newMessage').val('');
@@ -27,7 +26,7 @@ const addMessage = () => {
       display.displayMessages();
       emptyInput();
       chatbots.runChatbots(message);
-      reset.resetAttr();
+      $('#clearAllMessages').removeAttr('disabled');
     }
   });
 };
