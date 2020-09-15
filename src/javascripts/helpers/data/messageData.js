@@ -6,12 +6,16 @@ let messages = [
     user: 'Leslie Knope',
     time: 'September 15th, 2020 1:30pm',
     text: 'I love Pawnee!',
+    thumbsUp: 2,
+    thumbsDown: 1,
   },
   {
     id: 67,
     user: 'Ron Swanson',
     time: 'September 15th, 2020 1:32pm',
     text: "Don't sass me",
+    thumbsUp: 0,
+    thumbsDown: 0,
   },
   {
     id: 38,
@@ -19,18 +23,24 @@ let messages = [
     time: 'September 15th, 2020 1:33pm',
     text:
       'I told them my real name was Garry, and they said "who cares?" What a fun bunch of guys.',
+    thumbsUp: 0,
+    thumbsDown: 0,
   },
   {
     id: 500000,
     user: 'April Ludgate',
     time: 'September 15th, 2020 1:34pm',
     text: 'I hate talking to people.',
+    thumbsUp: 0,
+    thumbsDown: 0,
   },
   {
     id: 785968,
     user: 'Jean Ralphio',
     time: 'September 15th, 2020 1:35pm',
     text: 'Pills baby!',
+    thumbsUp: 0,
+    thumbsDown: 0,
   },
 ];
 

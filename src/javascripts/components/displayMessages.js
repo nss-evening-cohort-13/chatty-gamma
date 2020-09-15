@@ -29,6 +29,14 @@ const displayMessages = () => {
         <a class="trash" id="delete-${message.id}">
         <i class="fas fa-trash-alt"></i>
         </a>
+        <button id="${message.thumbsUp}">
+          <i class="fas fa-thumbs-up"></i>
+          <p>${message.thumbsUp}</p>
+        </button>
+        <button id="${message.thumbsDown}">
+          <i class="fas fa-thumbs-down"></i>
+          <p>${message.thumbsDown}</p>
+        </button>
       </div>
     </div>`);
     deleteMessage.deleteMessage(message, index);

@@ -20,6 +20,8 @@ const addMessage = () => {
         user: selectUser.selectUser(),
         time: moment().format('MMMM Do YYYY, h:mm a'),
         text: emojitext,
+        thumbsUp: 0,
+        thumbsDown: 0,
       };
       data.getMessages().push(newMessage);
       $('#messageDisplay').html('');
