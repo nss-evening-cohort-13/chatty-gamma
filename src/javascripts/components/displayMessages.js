@@ -26,7 +26,7 @@ const displayMessages = () => {
       </div>
       <div class="message-info-div">
         <img src=${profilePic} class="profile-pic" alt="user's profile pic">
-        <p class="message-info">${message.user} ${message.time}</p>
+        <p class="message-info">${message.user}</p> <p class="date">${message.time}</p>
         <a class="trash" id="delete-${message.id}">
         <i class="fas fa-trash-alt"></i>
         </a>
