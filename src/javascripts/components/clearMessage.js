@@ -27,18 +27,4 @@ const clearMessage = () => {
   });
 };
 
-// const clearMessage = () => {
-//   if (data.getMessages().length === 0) {
-//     $('#clearAllMessages').attr('disabled', true);
-//   } else {
-//     $('#clearAllMessages').on('click', () => {
-//       $('#clearAllMessages').removeAttr('disabled');
-//       $('#messageDisplay').empty();
-//       data.getMessages().length = 0;
-//       storage.clearItems();
-//       onClear();
-//     });
-//   }
-// };
-
 export default { clearMessage, resetAttr };
