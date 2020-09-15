@@ -9,8 +9,8 @@
   padding-left: 20px;
 }
 .users{
-  height:50%;
-  width:30%;
+  height:auto;
+  width:20%;
   margin:5px;
 }
 .radio{
@@ -20,8 +20,12 @@
 .userImage{
   height:auto;
   width: 100%;
+  object-fit: cover;
 }
 input[type="radio"]:checked+img{ 
   border: 2px $dark-green solid;
   background-color: $message-display-bg; 
+}
+.main{
+  flex-flow: wrap;
 }
