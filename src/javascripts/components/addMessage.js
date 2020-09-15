@@ -26,6 +26,7 @@ const addMessage = () => {
       display.displayMessages();
       emptyInput();
       chatbots.runChatbots(message);
+      $('#clearAllMessages').removeAttr('disabled');
     }
   });
 };

@@ -16,6 +16,7 @@ const clearMessage = () => {
     data.getMessages().length = 0;
     storage.clearItems();
     onClear();
+    $('#clearAllMessages').attr('disabled', true);
   });
 };
 
