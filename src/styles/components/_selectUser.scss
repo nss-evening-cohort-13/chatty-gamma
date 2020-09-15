@@ -5,11 +5,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
 }
 .users{
   height:50%;
   width:30%;
-  margin:0;
+  margin:5px;
 }
 .radio{
   display:none;
@@ -20,6 +22,6 @@
   width: 100%;
 }
 input[type="radio"]:checked+img{ 
-  border: 5px gold solid;
+  border: 2px $dark-green solid;
   background-color: $message-display-bg; 
 }
