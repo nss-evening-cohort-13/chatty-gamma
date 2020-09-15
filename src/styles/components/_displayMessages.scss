@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 #messageDisplay {
   background-color: $message-display-bg;
   display:flex;
@@ -13,16 +15,14 @@
   letter-spacing: .07em;
 }
 
-.message {
-
-}
-
 .message-text {
   background-color: $parks-rec-yellow;
   padding: .1% 1% .1% 1%;
   margin: 1.5%;
   display: flex;
   border-radius: 4rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0;
 }
 
 .profile-pic {
