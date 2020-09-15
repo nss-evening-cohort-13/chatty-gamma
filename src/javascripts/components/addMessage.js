@@ -4,6 +4,7 @@ import display from './displayMessages';
 import emoji from './emojis';
 import selectUser from './selectUser';
 import chatbots from './chatbots';
+import thumbs from './thumbs';
 
 const emptyInput = () => {
   $('#newMessage').val('');
@@ -15,13 +16,15 @@ const addMessage = () => {
       const newId = data.randomId();
       const message = $('#newMessage').val();
       const emojitext = emoji.emojis(message);
+      const up = thumbs.thumbsUp(message);
+      const down = thumbs.thumbsDown(message);
       const newMessage = {
         id: newId,
         user: selectUser.selectUser(),
         time: moment().format('MMMM Do YYYY, h:mm a'),
         text: emojitext,
-        thumbsUp: 0,
-        thumbsDown: 0,
+        thumbsUp: up,
+        thumbsDown: down,
       };
       data.getMessages().push(newMessage);
       $('#messageDisplay').html('');

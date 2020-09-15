@@ -1,6 +1,7 @@
 import messageData from '../helpers/data/messageData';
 import userData from '../helpers/data/userData';
 import deleteMessage from './deleteMessage';
+import thumbs from './thumbs';
 
 const displayMessages = () => {
   const messages = messageData.getMessages();
@@ -31,15 +32,17 @@ const displayMessages = () => {
         </a>
         <button id="${message.thumbsUp}">
           <i class="fas fa-thumbs-up"></i>
-          <p>${message.thumbsUp}</p>
+          <p id="up">${message.thumbsUp}</p>
         </button>
         <button id="${message.thumbsDown}">
           <i class="fas fa-thumbs-down"></i>
-          <p>${message.thumbsDown}</p>
+          <p id="down">${message.thumbsDown}</p>
         </button>
       </div>
     </div>`);
     deleteMessage.deleteMessage(message, index);
+    thumbs.thumbsUp(message);
+    thumbs.thumbsDown(message);
   });
 };
 export default { displayMessages };
