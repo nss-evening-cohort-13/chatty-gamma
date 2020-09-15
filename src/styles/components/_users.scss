@@ -1,0 +1,17 @@
+.userDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.users label {
+  cursor: pointer;
+}
+.users label :hover {
+    box-shadow: 2px 7px 8px #333333;
+    border-radius: 50%;
+}
+.selected {
+    border: 5px solid $dark-green;
+    border-radius: 50%;
+}

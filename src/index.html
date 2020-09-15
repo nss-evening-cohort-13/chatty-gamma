@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parks and rec</title>
+</head>
+<body>
+  <nav class="navbar justify-content-between navBar" style="position:sticky; top:0">
+    <a class="navbar-brand"><img src="https://i.postimg.cc/rs2fqZqz/033df1653be855696d1c8eb7a01ec595.png" alt="Parks and Rec Image"></a>
+    <div class="form-inline">
+      <input class="form-control mr-sm-2" type="text" placeholder="Add Gif" id="giphy">
+      <button type="button" id="addGif" class="btn btn-success">Add Gif</button>
+      <input class="form-control mr-sm-2" type="text" placeholder="New Message" id="newMessage">
+    </div>
+  </nav>
+  <div id="app">
+    <div class="input-group-prepend checkboxDiv">
+      <button class="clear-messages  my-2 my-sm-0" id="clearAllMessages" type="button" value="disabled">Clear All Messages</button>
+      <div class="input-group-text smallCheckbox">
+        <input type="checkbox" class="checkbox" id="darkModeTarget" aria-label="Checkbox for following text input">
+        <h6 class="darkmodeTitle">Dark Mode</h6>
+      </div>
+      <div class="input-group-text smallCheckbox">
+        <input type="checkbox" class="checkbox" id="largeTextCheckbox" aria-label="Checkbox for following text input">
+        <h6 class="largeTextTitle">Large Text</h6>
+      </div>
+    </div>
+  </div> 
+  <div class="d-flex flex-row main">
+    <div class="header">
+      <h2 class="selectUser">Choose Your Character</h2> 
+      <div id="select-user">
+    </div>
+  </div>
+   
+    <div id="messageDisplay"></div>
+  </div>
+  </div>
+
+</body>
+</html>

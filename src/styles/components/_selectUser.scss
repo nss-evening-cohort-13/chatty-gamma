@@ -1,0 +1,34 @@
+#select-user {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
+}
+.users{
+  height:auto;
+  width:20%;
+  margin:5px;
+}
+.radio{
+  display:none;
+}
+
+.userImage{
+  height:auto;
+  width: 100%;
+  object-fit: cover;
+}
+input[type="radio"]:checked+img{ 
+  border: 5px $dark-green solid;
+  border-radius: 50%;
+}
+.main{
+  flex-flow: wrap;
+}
+.header{
+  width: 40%;
+}

@@ -1,0 +1,31 @@
+nav {
+  padding: 10px;
+  height: 100%;
+  img {
+    padding: 5px;
+    border-radius: 8px;
+  }
+}
+.navbar {
+  background-color: $light-grey;
+  background-image: url('https://cdn.shopify.com/s/files/1/0250/1217/4900/collections/parks-banner_1_1400x.jpg?v=1569426387');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+#giphy {
+  margin: 5px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+#newMessage {
+  position: absolute;
+  bottom: 0;
+  margin: 5px;
+  font-weight: bold;
+  width: 90%;
+  opacity: 0.8;
+}
+.form-inline {
+  width: 100%;
+}

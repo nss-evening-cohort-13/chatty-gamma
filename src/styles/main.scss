@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import './globals/';
+@import './components/';
+
+body {
+  background-color: $light-grey;
+  color: black;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-weight: 100;
+
+}
+body.dark {
+  background-color: #2E4057;
+  color: rgb(255, 253, 253);
+  text-shadow: 1px 1px #333333;
+  text-align: center;
+  text-decoration-style: solid;
+}
