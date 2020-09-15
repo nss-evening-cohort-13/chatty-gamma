@@ -25,7 +25,6 @@
 input[type="radio"]:checked+img{ 
   border: 5px $dark-green solid;
   border-radius: 50%;
-  // background-color: $message-display-bg; 
 }
 .main{
   flex-flow: wrap;
