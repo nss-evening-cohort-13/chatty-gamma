@@ -4,9 +4,9 @@ const buildUserRadio = () => {
   users.getUsers().forEach((item) => {
     $('#select-user').append(`
     <div class="users">
-        <label>
-            <input type="radio" id="${item.id}-button" name="character" value="${item.name}">
-            <img src="${item.img}"/><br>
+        <label class="imageWrap">
+            <input class="radio" type="radio" id="${item.id}-button" name="character" value="${item.name}">
+            <img class="userImage"src="${item.img}"/><br>
             ${item.name}
         </label>
     </div>`);
