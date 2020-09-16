@@ -7,6 +7,8 @@ This app was built as a way for the Parks Department to communicate more efficie
 * The user can send a message by entering their message in the "New Message" field
 * The user can delete a message by clicking the trash can icon on the message they want to delete
 * The user can clear all the messages from the page
+* The user can use gifs and emojis to express themselves
+* A chatbot will also respond to certain messages to encourage the user to treat themselves
 
 ## Contributors
 - [Chris Lojacono](https://github.com/chrislojacono)
