@@ -3,13 +3,13 @@ import datas from '../helpers/data/messageData';
 import display from './displayMessages';
 import selectUser from './selectUser';
 import emoji from './emojis';
+import APIKEYS from './apikeys';
 
-const APIKEY = 'bIDzmVyydApjmjrw62c1gG8rufmN1yMA';
 const fetch = require('node-fetch');
 
 const giphyButton = () => {
   $('#addGif').on('click', () => {
-    let url = `https:api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=`;
+    let url = `https:api.giphy.com/v1/gifs/search?api_key=${APIKEYS.APIKEYS}&limit=1&q=`;
     const str = $('#giphy').val().trim();
     url = url.concat(str);
     fetch(url)
